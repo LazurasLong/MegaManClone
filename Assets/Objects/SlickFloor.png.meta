@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: ee2b2c46663762b4e86b4dc67c5558be
-timeCreated: 1495909842
+timeCreated: 1496278293
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -37,7 +37,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 3
   spriteExtrude: 0
   spriteMeshType: 0
   alignment: 0
@@ -123,7 +123,11 @@ TextureImporter:
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
-    outline: []
+    outline:
+    - - {x: -24, y: 8}
+      - {x: -24, y: -8}
+      - {x: 24, y: -8}
+      - {x: 24, y: 8}
   spritePackingTag: 
   userData: 
   assetBundleName: 

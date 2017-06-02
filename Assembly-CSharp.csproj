@@ -47,7 +47,8 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Bullet\Bullet.cs" />
-     <Compile Include="Assets\Enemy\Enemy.cs" />
+     <Compile Include="Assets\Enemy\Blader.cs" />
+     <Compile Include="Assets\Player\PlayerHealthHandler.cs" />
      <Compile Include="Assets\Player\PlayerMovement.cs" />
      <Compile Include="Assets\Player\PlayerSpriteHandler.cs" />
      <Compile Include="Assets\Player\Weapon.cs" />

@@ -17,14 +17,14 @@ Platform assembly: C:\Users\USER\Documents\Meteor-X\test_Data\Managed\UnityEngin
 Loading C:\Users\USER\Documents\Meteor-X\test_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\Users\USER\Documents\Meteor-X\test_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading C:\Users\USER\Documents\Meteor-X\test_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.025 seconds
+- Completed reload, in  0.032 seconds
 Platform assembly: C:\Users\USER\Documents\Meteor-X\test_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\USER\Documents\Meteor-X\test_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 3840x2162 at -1005,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.769482 ms
+UnloadTime: 3.254912 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: b14 -> priority: 1 
-  Thread -> id: 2dd8 -> priority: 1 
+  Thread -> id: 25d0 -> priority: 1 
+  Thread -> id: 44a0 -> priority: 1 

@@ -6,7 +6,8 @@ using UnityEngine;
 public class Bullet : MonoBehaviour {
   public Direction bulletDirection = Direction.RIGHT;
   public float speed = 16.0f;
-  public int damage = 5;
+  public int damage = 2;
+  public Weapon attacker;
   
   private Transform _transform;
   
@@ -18,10 +19,14 @@ public class Bullet : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
     Vector2 screenPosition = Camera.main.WorldToScreenPoint(transform.position);
-    if (screenPosition.y > Screen.height || screenPosition.y < 0)
-      Destroy(this.gameObject);		  
-    if (screenPosition.x > Screen.width || screenPosition.x < 0)
-      Destroy(this.gameObject);		  
+    if (
+      (screenPosition.y > Screen.height || screenPosition.y < 0) || 
+      (screenPosition.x > Screen.width || screenPosition.x < 0)
+      ){
+      Destroy(this.gameObject);
+      if (attacker != null)
+        attacker.BulletGone();    
+    } 
 		MoveBullet();
     
 	}
@@ -37,9 +42,11 @@ public class Bullet : MonoBehaviour {
   
   void OnCollisionEnter2D(Collision2D collision){
     if(collision.collider.tag == "Enemy") {
-      collision.collider.gameObject.GetComponent<Enemy>().Damage(damage);
+      collision.collider.gameObject.GetComponent<Blader>().Damage(damage);
     }
     //_transform.Translate(0, -1 ,0);
     Destroy(gameObject);
+    if (attacker != null)
+      attacker.BulletGone();
   }
 }
