@@ -43,6 +43,8 @@ public class PlayerMovement : MonoBehaviour {
     Attack();
 	}
   
+  ///////////////////////////////////////////////////////////////////////////////////
+  // Player Controls
   void MovePlayer(){
     bool isDamaged = playerHealthHandler.cooldownTimer > 0.0f;
     float translate;
@@ -99,6 +101,10 @@ public class PlayerMovement : MonoBehaviour {
       attacking = 0.0f;
   }
 
+  
+  ///////////////////////////////////////////////////////////////////////////////////
+  // Collision Detections
+  
   void OnCollisionEnter2D(Collision2D collision) {
     if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Solid Tiles")){
       foreach (ContactPoint2D coll in collision.contacts){
