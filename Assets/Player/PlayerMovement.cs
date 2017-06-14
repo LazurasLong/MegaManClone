@@ -111,10 +111,10 @@ public class PlayerMovement : MonoBehaviour {
         // check for ground collision
         if ((coll.normal.y == 1.0f) && (coll.normal.x == 0.0f))
           isOnGround = true;
-        if ((coll.normal.y == 0.0f) && (coll.normal.x == 1.0f))
-          isOnLeftContact = true;
-        if ((coll.normal.y == 0.0f) && (coll.normal.x == -1.0f))
-          isOnRightContact = true;
+        //if ((coll.normal.y == 0.0f) && (coll.normal.x == 1.0f))
+          //isOnLeftContact = true;
+        //if ((coll.normal.y == 0.0f) && (coll.normal.x == -1.0f))
+          //isOnRightContact = true;
       }
     }
   }
@@ -125,10 +125,10 @@ public class PlayerMovement : MonoBehaviour {
         // check for ground collision
         if ((coll.normal.y == 1.0f) && (coll.normal.x == 0.0f))
           isOnGround = true;
-        if ((coll.normal.y == 0.0f) && (coll.normal.x == 1.0f))
-          isOnLeftContact = true;
-        if ((coll.normal.y == 0.0f) && (coll.normal.x == -1.0f))
-          isOnRightContact = true;
+        //if ((coll.normal.y == 0.0f) && (coll.normal.x == 1.0f))
+          //isOnLeftContact = true;
+        //if ((coll.normal.y == 0.0f) && (coll.normal.x == -1.0f))
+          //isOnRightContact = true;
       }
     }
   } 
@@ -136,8 +136,8 @@ public class PlayerMovement : MonoBehaviour {
   void OnCollisionExit2D(Collision2D collision) {
     if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Solid Tiles")){
       isOnGround = false;
-      isOnLeftContact = false;
-      isOnRightContact = false;
+      //isOnLeftContact = false;
+      //isOnRightContact = false;
     }
   }
   
