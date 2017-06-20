@@ -53,6 +53,10 @@
      <Compile Include="Assets\Player\PlayerSpriteHandler.cs" />
      <Compile Include="Assets\Player\Weapon.cs" />
      <Compile Include="Assets\Property Scripts\DestroyWhenOffCamera.cs" />
+     <Compile Include="Assets\UI\CameraFollow.cs" />
+     <Compile Include="Assets\UI\PlayerHealthUI.cs" />
+     <None Include="Assets\UI\Font\FONTLOG.txt" />
+     <None Include="Assets\UI\Font\LICENSE.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
